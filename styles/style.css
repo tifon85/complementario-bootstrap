@@ -11,6 +11,7 @@
     background-color: rgba(255,255,255, 0.7);
 }
 
+
 .titulo {
     text-align: center;
 }
@@ -23,10 +24,20 @@
     height: 60vh;
 }
 
-.intro {
+/* pagina servicios */
+
+.introServicios {
     height: 30vh;
     text-align: center;
+    background-color: rgb(253, 230, 129);
 }
+
+.tiposServicios div {
+    background-color: rgb(253, 230, 129);
+    text-align: center;
+}
+
+/* secciones index */
 
 .secciones {
     display:flex;
@@ -41,11 +52,15 @@
     display: none;
 }
 
+/* carousel */
+
 .contenedorCarousel .carousel img {
     object-fit: cover;
     /*object-position: right;*/
     height: 90vh;
 }
+
+/* footer */
 
 .pie {
     display:flex;
@@ -76,7 +91,44 @@
     background-color:slategray;
 }
 
+/* imagen de intro de cada pagina */
+
+.introImg {
+    height: 70vh;
+}
+
+/* pagina nosotros */
+
+.introNosotros {
+    text-align: center;
+    background-color: rgb(253, 230, 129);
+}
+
+/* paginas preguntas */
+.preguntas {
+    height: 75vh;
+}
+
+/* pagina formulario */
+.formularioLocal {
+    text-align: center;
+    background-color: rgb(253, 230, 129);
+}
+
+.direccion {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(253, 230, 129);
+    margin-top: 2%;
+}
+
+iframe {
+    width: 100%;
+}
+
 @media (min-width: 800px) {
+
+    /* secciones index responsive */
     
     .mobile {
         display:flex;
@@ -91,9 +143,21 @@
         display:initial;
     }
 
+    /* footer responsive */
+
     .pie {
         display:flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
+
+    /* pagina servicios responsive */
+    .tiposServicios div {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: rgb(253, 230, 129);
+        text-align: center;
+    }
+
 }
